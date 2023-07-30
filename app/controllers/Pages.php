@@ -6,6 +6,7 @@ class Pages extends Controller {
     public function index() {
         $data = [
         'title' => 'SharePosts',
+        'description' => 'Simple social network built on the OOP MVC PHP Framework'
       ];
 
       $this->view('pages/index', $data);
@@ -13,7 +14,8 @@ class Pages extends Controller {
 
     public function about() {
         $data = [
-            'title' => 'About'
+            'title' => 'About',
+            'description' => 'App to share posts on a simple social network built on the OOP MVC PHP Framework'
           ];
 
         $this->view('pages/about', $data);
