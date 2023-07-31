@@ -26,4 +26,24 @@
 
             }
         }
+
+        public function login(){
+            // Check for POST
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+            // Proces form
+            } else {
+                // load form
+                $data= [
+                    
+                    'email' => '',
+                    'password' => '',
+                    'email_err' => '',
+                    'password_err' => ''
+                ];
+
+                // Load view
+                $this->view('users/login', $data);
+
+            }
+        }
     }
