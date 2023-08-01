@@ -42,7 +42,7 @@
 
     // Find user by email
     public function findUserByEmail($email){
-      $loggedinUser = "";
+      
       $this->db->query('SELECT * FROM users WHERE email = :email');
       $this->db->bind(':email', $email);
 
